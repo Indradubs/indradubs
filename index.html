@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indra Dubs | Links Oficiais</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1a1a2e, #0f0f14);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 20px;
+      padding: 30px 25px 35px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #7f5af0, #22d3ee);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(127, 90, 240, 0.6);
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #1f2933, #111827);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn:hover::before {
+      opacity: 1;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      background: linear-gradient(135deg, #7f5af0, #22d3ee);
+    }
+
+    .btn.disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    }
+
+    .btn.disabled:hover {
+      transform: none;
+      box-shadow: none;
+      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 13px;
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+
+    footer a {
+      color: #22d3ee;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">ID</div>
+
+    <h1>Indra Dubs</h1>
+    <p class="subtitle">Dublagens • Animes • Conteúdo Geek</p>
+
+    <div class="links">
+      <a class="btn" href="https://www.instagram.com/indradubss/" target="_blank">📸 Instagram</a>
+      <a class="btn" href="https://www.tiktok.com/@indra_dubs" target="_blank">🎵 TikTok</a>
+      <a class="btn" href="https://discord.gg/GvXUVQCvX9" target="_blank">💬 Discord</a>
+      <a class="btn disabled" href="#">🛒 Loja do Canal (Em breve)</a>
+    </div>
+
+    <footer>
+      <p>📩 Publicidades e parcerias:</p>
+      <p><a href="mailto:indradubspublicidade@gmail.com">indradubspublicidade@gmail.com</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
